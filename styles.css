@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dc143c;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+p.notice {
+    color: #e8b621;
+    font-size: 16px;
+    opacity: 0.8;
+    position: fixed;
+    right: 60px;
+    bottom: 30px;
+}
+
+.menu {
+    background-color: #ffe4c4;
+    overflow: hidden;
+    width: 700px;
+    border-radius: 4px;
+    margin: 0 auto;
+    transform: translateY(-100px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.menu-header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(./img/calum-lewis-vA1L1jRTM70-unsplash.jpg);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    border-radius: 2px 2px 0px 0px;
+    height: 100px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.menu h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+
+}
+
+.menu-body {
+    padding: 50px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul.recipes {
+    display: flex;
+    gap: 20px;
+}
+
+li.recipe {
+    border: 1px solid rgb(255, 239, 177);
+    background-color: #fff;
+    border-radius: 3px;
+    width: 33.3%;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+li.recipe:hover {
+    transform: translateY(-2px);
+    transition: transform .3s ease-out;
+
+}
+
+li.recipe a {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+li.recipe a span {
+    padding: 4px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.recipe img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+
+}
